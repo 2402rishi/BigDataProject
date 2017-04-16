@@ -1,3 +1,24 @@
+hadoop fs -rm -r CMPLNT_NUM.out CMPLNT_NUM.out
+hadoop fs -rm -r CMPLNT_FR_DT.out CMPLNT_FR_DT.out
+hadoop fs -rm -r CMPLNT_FR_TM.out CMPLNT_FR_TM.out
+hadoop fs -rm -r CMPLNT_TO_DT.out CMPLNT_TO_DT.out
+hadoop fs -rm -r CMPLNT_TO_TM.out CMPLNT_TO_TM.out
+hadoop fs -rm -r RPT_DT.out RPT_DT.out
+hadoop fs -rm -r KY_CD.out KY_CD.out
+hadoop fs -rm -r OFNS_DESC.out OFNS_DESC.out
+hadoop fs -rm -r PD_CD.out PD_CD.out
+hadoop fs -rm -r PD_DESC.out PD_DESC.out
+hadoop fs -rm -r CRM_ATPT_CPTD_CD.out CRM_ATPT_CPTD_CD.out
+hadoop fs -rm -r LAW_CAT_CD.out LAW_CAT_CD.out
+hadoop fs -rm -r JURIS_DESC.out JURIS_DESC.out
+hadoop fs -rm -r BORO_NM.out BORO_NM.out
+hadoop fs -rm -r ADDR_PCT_CD.out ADDR_PCT_CD.out
+hadoop fs -rm -r LOC_OF_OCCUR_DESC.out LOC_OF_OCCUR_DESC.out
+hadoop fs -rm -r PREM_TYP_DESC.out PREM_TYP_DESC.out
+hadoop fs -rm -r PARKS_NM.out PARKS_NM.out
+hadoop fs -rm -r HADEVELOPT.out HADEVELOPT.out
+hadoop fs -rm -r Lat_Lon.out Lat_Lon.out
+
 cd ./columnsValidation
 spark-submit CMPLNT_NUM.py /user/rda311/NYPD_Complaint_Data_Historic.csv
 spark-submit CMPLNT_FR_DT.py /user/rda311/NYPD_Complaint_Data_Historic.csv

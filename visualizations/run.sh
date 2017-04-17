@@ -1,3 +1,8 @@
+hadoop fs -rm -r borough_name.out
+hadoop fs -rm -r Date.out
+hadoop fs -rm -r keycode.out
+hadoop fs -rm -r prem_desc.out
+hadoop fs -rm -r Time.out
 cd ./spark
 spark-submit borough_name.py /user/rda311/clean.csv
 spark-submit Date.py /user/rda311/clean.csv

@@ -1,5 +1,4 @@
 # BigDataProject
-------
 Team Members
 | Name | Net Id |
 | ------ | ------ |

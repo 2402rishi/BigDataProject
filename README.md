@@ -1,6 +1,7 @@
 # BigDataProject
+
 Team Members
-| Name | Net Id |
+| Name   | Net Id |
 | ------ | ------ |
 | Rishi Agarwal| rda311 |
 | Arhant Jain| aj1973 |

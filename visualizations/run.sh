@@ -9,6 +9,7 @@ spark-submit Date.py /user/rda311/clean.csv
 spark-submit keycode.py /user/rda311/clean.csv
 spark-submit prem_desc.py /user/rda311/clean.csv
 spark-submit Time.py /user/rda311/clean.csv
+cd ..
 hadoop fs -getmerge borough_name.out borough_name.out
 hadoop fs -getmerge Date.out Date.out
 hadoop fs -getmerge keycode.out keycode.out

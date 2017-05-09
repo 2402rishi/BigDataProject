@@ -8,12 +8,12 @@ from csv import reader
 
 
 if __name__ == "__main__":
-    sc = SparkContext()
-    lines = sc.textFile(sys.argv[1], 1)
-    rows = lines.mapPartitions(lambda x: reader(x))
+	sc = SparkContext()
+	lines = sc.textFile(sys.argv[1], 1)
+	rows = lines.mapPartitions(lambda x: reader(x))
 	violation = rows.filter(lambda x : (str(x[13]) == "BROOKLYN"))
-    violation_code = violation.map(lambda x: ((x[1]),1))
-    violation_count = violation_code.reduceByKey(add)
+	violation_code = violation.map(lambda x: ((x[1]),1))
+	violation_count = violation_code.reduceByKey(add)
 	
 
     #convert Voilation_count to RDD and dictionary for formatting

@@ -60,6 +60,8 @@ spark-submit 2013weather.py /user/rda311/weather.csv
 spark-submit 2014weather.py /user/rda311/weather.csv
 spark-submit 2015weather.py /user/rda311/weather.csv
 cd ..
+mkdir Output
+cd Output
 hadoop fs -getmerge borough_name.out borough_name.out
 hadoop fs -getmerge Date.out Date.out
 hadoop fs -getmerge keycode.out keycode.out

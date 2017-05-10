@@ -38,6 +38,7 @@ $ ./run.sh
 ```
 Install matplot lib:
 [MatPlot lib](https://github.com/ehmatthes/pcc/blob/master/chapter_15/README.md)
+Download the Output folder and the python scripts in the visualization folder
 ```sh
 $ python name_of_the_graph_file.py
 ```
